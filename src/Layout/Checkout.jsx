@@ -16,7 +16,7 @@ const Checkout = () => {
       {cartItem.map((item) => (
         <CheckoutItem key={item.id} cartItem={item} />
       ))}
-      <span className="mt-8 ml-auto text-3xl">Total: {cartTotal}</span>
+      <span className="mt-8 ml-auto text-3xl">Total: ${cartTotal}</span>
     </div>
   );
 };

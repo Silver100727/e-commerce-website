@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { onAuthStateChangedListerner } from "../utils/firebase/firebase.utils";
+import { createUserDocumentFromAuth, onAuthStateChangedListerner } from "../utils/firebase/firebase.utils";
 import { useNavigate } from "react-router-dom";
 
 export const userContext = createContext({

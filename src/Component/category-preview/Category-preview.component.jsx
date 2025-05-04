@@ -7,6 +7,7 @@ const CategoryPreview = () => {
   const { categoriesMap } = useContext(categoriesContext);
   const { navigateTo } = useContext(userContext);
 
+  console.log("categoriesMap", categoriesMap);
   return (
     <>
       {Object.keys(categoriesMap).map((title) => {
